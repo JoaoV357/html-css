@@ -4,36 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código fonte</h2>
-    <p>O código <code>document.getElementeById('Teste')</code> é escrito em linguagem JavaScript.</p>
-    <p>
-        <pre> <!--O comando pre organiza e tabula o código-->
-            <code> <!--O comando code indica que o código a seguir é de uma linguagem de programação e muda o tamanho das letras para facilitar a leitura-->
-    num = int(input('Digite um número: '))
-    if num % 2 == 0:
-        print(f'O número {num} é par.')
-    else:
-        print(f'O numéro {num} é impar.')
-    print('Fim do código.')
-            </code>
-        </pre>
-    </p>
-    <h2>Citações simples</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
-    <blockquote cite="https://sitealeatorionumseioque.com/Teste-de-citacao=16-32Pm"><!--Você pode colocar de que site você tirou essa citação com o comando cite.-->
-        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p><!-- O comando abbr serve para dizer o que significa a sigla-->
-    <h2>Texto invertido</h2>
-    <p><bdo dir="ltr">Estou aprendendo a desenvolver sites utilizando html</bdo></p>
-    <p><bdo dir="rtl">Estou aprendendo a desenvolver sites utilizando html</bdo></p>
-
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1" start="3"> <!-- types possiveis: 1, A, a, I, i-->
+        <!--Esta é a tag utilizada para fazer uma lista ordenada.-->
+        <li>Acordar</li><!--A tag <li> pode ser usada com abertura e fechamento ou somente com a abertura.-->
+        <li>Ligar para a Amélia, a mulher de verdade.</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café da manhã</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="square"> <!-- Esse <ul> é a tag para uma lista não ordenada-->
+        <!--types possiveis: disc, ciscle e square-->
+        <li>Arroz
+        <li>Feijão
+        <li>Carne
+        <li>Ovos
+        <li>Alface
+        <li>Tomate
+    </ul>
 </body>
 </html>
