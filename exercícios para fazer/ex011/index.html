@@ -11,6 +11,16 @@
         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="imagem flexível">
-    </picture>
+    </picture> 
+    <h1>reproduzindo mídias no HTML 5.</h1>
+    <P>Vamos aprender a reproduzir áudios no HTML 5.</P>
+    <audio src="midia/Erev Shel Shoshanim-E's Jammy Jams.mp3"controls autoplay loop>
+    </audio> <!--O comando control cria controle do play/pause do vídeo. O comando loop reinicia o audio depois que ele se encerra.-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <!-- <source src="midia/guanacast-33.ogg" type="audio/ogg"> -->
+        <!-- <source src="midia/guanacast-33.wav" type="audio/wav"> -->
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">clique aqui para baixar o arquivo MP3</a>.</p><!--Esta lista serve para otimizar e tornar seu site mais acessível a todos. Ex: Se o arquivo mp3 não rodar no navegador do usuário, o navegador tentará rodar o formato .ogg, caso não dê certo, tentará o .wav e assim por diante.-->
+    </audio>
 </body>
 </html>
